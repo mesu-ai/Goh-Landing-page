@@ -1,0 +1,426 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma" medium;
+  src: url("/fonts/Axiforma-Medium.ttf");
+}
+
+.padding-bottom-60 {
+  padding-bottom: 60px;
+}
+
+.form-control {
+  background: #ffffff;
+  border: 2.5px solid #e7e7e7;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.form-control:hover,
+.form-control:focus {
+  background: #ffffff;
+  border: 2.5px solid #41b06b;
+  border-radius: 8px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Axiforma";
+  background: url(../assets/bg.png) no-repeat;
+  background-size: contain;
+}
+
+/* header css start */
+#header .nav-link {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  color: #101E16;
+}
+
+#header .buttonGroup {
+  width: 77.2px;
+  background: #E6F1EA;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .buttonGroup>.btnText {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+}
+
+#header .buttonGroup>.tanslateBtn {
+  border-radius: 10px;
+
+}
+
+#header .buttonGroup>.active {
+  background: #41B06B;
+  color: #FFFFFF;
+  border-radius: 10px;
+
+}
+
+
+/* welcome css start */
+
+#welcome .welcomeTitle {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  /* line-height: 111px; */
+  color: #41B06B;
+}
+
+#welcome .welcomeGoh {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  /* line-height: 118px; */
+  color: #101E16;
+
+}
+
+#welcome .welcomeText {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4C4F4D;
+}
+
+
+/* about css start */
+
+#about {
+  margin-top: 60px;
+  background-image: url('../assets/about/aboutbg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#about .aboutTitle {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 86px;
+  text-align: center;
+  color: #101E16;
+}
+
+#about .aboutText {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  color: #101E16;
+  text-align: justify;
+}
+
+
+
+/* feature css start */
+#feature {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #fff;
+}
+
+#feature .feature-header {
+  text-align: center;
+  padding-bottom: 47px;
+}
+
+#feature .feature-header .feature-header-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 86px;
+  color: #101e16;
+}
+
+#feature .features-img-div,
+#feature .features-img-div img {
+  height: 100%;
+}
+
+
+#feature .feature-card .feature-card-header .feature-card-header-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 59px;
+  color: #101e16;
+  margin-bottom: 0px;
+}
+
+#feature .feature-card .feature-card-header .feature-card-header-disc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 20px 0px;
+  margin-bottom: 0px;
+  color: #4c4f4d;
+}
+
+#feature .feature-card .feature-card-body .feature-card-body-checkmark li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  margin-bottom: 18px;
+  list-style-type: none;
+  padding: 0.25em 0 0 2.5em;
+  position: relative;
+}
+
+#feature .feature-card .feature-card-body .feature-card-body-checkmark li::before {
+  content: " ";
+  display: block;
+
+  border-radius: 0.8em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0.5em;
+  top: 40%;
+  margin-top: -0.5em;
+  box-sizing: initial;
+}
+
+#feature .feature-card .feature-card-body .activity li::before {
+  border: solid 0.8em #febe3a;
+}
+
+#feature .feature-card .feature-card-body .friends li::before {
+  border: solid 0.8em #52c9fa;
+}
+
+#feature .feature-card .feature-card-body .chatting li::before {
+  border: solid 0.8em #f44e8a;
+}
+
+#feature .feature-card .feature-card-body .feature-card-body-checkmark li::after {
+  content: " ";
+  display: block;
+  width: 0.3em;
+  height: 0.6em;
+  border: solid #fff;
+  border-width: 0 0.2em 0.2em 0;
+  position: absolute;
+  left: 1em;
+  top: 40%;
+  margin-top: -0.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: initial;
+}
+
+/* gallery css start */
+#gallery {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #e8faef;
+}
+
+#gallery .gallery-head .gallery-head-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 79px;
+  text-align: center;
+  color: #101e16;
+}
+
+#gallery .gallery-head {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+#gallery .gallery-head .gallery-head-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 79px;
+  text-align: center;
+  color: #101e16;
+  margin-bottom: 0px;
+}
+
+#gallery #gallery-slider .gallery-img {
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#gallery #gallery-slider .gallery-img-1 {
+  height: 700px;
+}
+
+#gallery #gallery-slider .gallery-img-4 {
+  margin-top: 30px;
+}
+
+#gallery #gallery-slider .gallery-img-2,
+#gallery #gallery-slider .gallery-img-3,
+#gallery #gallery-slider .gallery-img-4 {
+  height: 334px !important;
+}
+
+/* contact css :start */
+#contact {
+  background: #40b06a;
+  padding-top: 120px;
+}
+
+#contact .contactTitle {
+  font-family: 'Axiforma';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 86px;
+  color: #101E16;
+  
+  
+}
+
+#contact .card .contact-img {
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+#contact .card {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #ffffff;
+  box-shadow: 0px 15px 30px rgba(128, 141, 133, 0.12);
+  border-radius: 30px 180px;
+  margin-bottom: -80px !important;
+  border: none !important;
+}
+
+#contact .card .form-control {
+  padding: 18px;
+}
+
+#contact .card .btn-submit {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 24px;
+  background: #41b06b;
+  box-shadow: 0px 18px 40px rgba(65, 176, 107, 0.18);
+  border-radius: 12px;
+}
+
+#contact .card .btn-submit:hover {
+  opacity: 0.7;
+}
+
+/* footer css start */
+#footer {
+  background: #101e16;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+#footer .social-side .social-side-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 57px;
+  color: #ffffff;
+}
+
+#footer .social-side .social-side-sub-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #ffffff;
+
+  opacity: 0.9;
+}
+
+#footer .social-side .social {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* padding-left: 0px !important; */
+  margin-bottom: 18.5px;
+}
+
+#footer .social-side {
+  text-align: left;
+}
+
+#footer .social-side .social li a {
+
+  background: #8C9D94;
+  border-radius: 50%;
+  padding: 8px 10px 8px 10px;
+  display: flex;
+  align-items: center;
+  color: #101E16;
+  text-decoration: none;
+
+}
+
+#footer .social-side .social li a.pinterest {
+
+  padding: 8px 9px 8px 9px;
+
+}
+
+#footer .social-side .social li a:hover,
+#footer .social-side .social li a:focus {
+  background: #fff;
+}
+
+#footer .social-side .rights {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer .download-side {
+  text-align: right;
+}
+
+#footer .download-side .appstore {
+  margin-bottom: 32px;
+}
