@@ -52,7 +52,7 @@ body {
 }
 
 #header .buttonGroup {
-  width: 77.2px;
+  width: 110px;
   background: #E6F1EA;
   border-radius: 16px;
   display: flex;
@@ -62,22 +62,23 @@ body {
 
 #header .buttonGroup>.btnText {
   font-family: 'Axiforma';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 15px;
-  text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 15px;
+text-align: center;
+
 }
 
 #header .buttonGroup>.tanslateBtn {
-  border-radius: 10px;
+  border-radius: 14px;
+  width: 54px;
 
 }
 
 #header .buttonGroup>.active {
   background: #41B06B;
   color: #FFFFFF;
-  border-radius: 10px;
 
 }
 
@@ -86,20 +87,18 @@ body {
 
 #welcome .welcomeTitle {
   font-family: 'Axiforma';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  /* line-height: 111px; */
-  color: #41B06B;
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+color: #41B06B;
 }
 
 #welcome .welcomeGoh {
   font-family: 'Axiforma';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  /* line-height: 118px; */
-  color: #101E16;
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+color: #101E16;
 
 }
 
@@ -133,13 +132,15 @@ body {
 
 #about .aboutText {
   font-family: 'Axiforma';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 40px;
-  text-align: center;
-  color: #101E16;
-  text-align: justify;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 40px;
+text-align: center;
+
+color: #101E16;
+
+  /* text-align: justify; */
 }
 
 
@@ -302,11 +303,11 @@ body {
 
 #contact .contactTitle {
   font-family: 'Axiforma';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 86px;
-  color: #101E16;
+font-style: normal;
+font-weight: 700;
+font-size: 52px;
+line-height: 86px;
+color: #101E16;
   
   
 }
@@ -329,12 +330,37 @@ body {
 
 #contact .card .form-control {
   padding: 18px;
+
+}
+
+
+
+#contact .form-label{
+  font-family: 'Axiforma';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #808D85;
+}
+
+#contact .form-control:focus{
+  font-family: 'Axiforma';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #101E16;
+
+  
 }
 
 #contact .card .btn-submit {
+  width: 160px;
+  height: 80px;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
