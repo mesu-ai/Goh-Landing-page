@@ -386,6 +386,19 @@ body {
   text-align: left;
 }
 
+body[dir="rtl"] #footer .social-side {
+  text-align: right;
+}
+
+
+body[dir="rtl"] #footer .download-side {
+  text-align: left;
+}
+/* 
+body[dir="rtl"] #footer .social-side {
+  text-align: right ;
+} */
+
 #footer .social-side .social li a {
 
   background: #8C9D94;
@@ -398,6 +411,11 @@ body {
 
 }
 
+body[dir="rtl"] #footer .social-side .social  {
+
+  padding:0px !important;
+
+}
 #footer .social-side .social li a.pinterest {
 
   padding: 8px 9px 8px 9px;

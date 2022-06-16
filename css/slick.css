@@ -103,6 +103,7 @@
 
 #gallery-slider .slick-arrow {
   position: absolute;
+  z-index: 2;
   top: 46.5%;
   background: #ffffff;
   border-radius: 18px;
@@ -122,3 +123,7 @@
    right: -7%;
    
   }
+
+
+
+
