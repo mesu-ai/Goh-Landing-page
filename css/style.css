@@ -41,109 +41,188 @@ body {
   background-size: contain;
 }
 
+/* collaps button start */
+.animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: black;
+}
+
+
+.animated-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.navbar-light .navbar-toggler {
+  padding: 10px;
+  background-color: white;
+  color: white;
+  border: none;
+
+}
+
 /* header css start */
+
 #header .nav-link {
-  font-family: 'Axiforma';
+  font-family: "Axiforma";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 36px;
-  color: #101E16;
+  color: #101e16;
 }
 
 #header .buttonGroup {
-  width: 110px;
-  background: #E6F1EA;
-  border-radius: 16px;
+  width: 100px;
+  background: #e6f1ea;
+  border-radius: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #header .buttonGroup>.btnText {
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 15px;
-text-align: center;
-
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
 }
 
 #header .buttonGroup>.tanslateBtn {
-  border-radius: 14px;
-  width: 54px;
-
+  border-radius: 12px;
+  width: 51px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #header .buttonGroup>.active {
-  background: #41B06B;
-  color: #FFFFFF;
-
+  background: #41b06b;
+  color: #ffffff;
 }
-
 
 /* welcome css start */
 
 #welcome .welcomeTitle {
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 400;
-font-size: 72px;
-color: #41B06B;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #41b06b;
 }
 
 #welcome .welcomeGoh {
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-color: #101E16;
-
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  color: #101e16;
 }
 
 #welcome .welcomeText {
-  font-family: 'Axiforma';
+  font-family: "Axiforma";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #4C4F4D;
+  color: #4c4f4d;
 }
-
 
 /* about css start */
 
 #about {
   margin-top: 60px;
-  background-image: url('../assets/about/aboutbg.png');
+  background-image: url("../assets/about/aboutbg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
+  background-position: center;
 }
 
 #about .aboutTitle {
-  font-family: 'Axiforma';
+  font-family: "Axiforma";
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
   line-height: 86px;
   text-align: center;
-  color: #101E16;
+  color: #101e16;
 }
 
 #about .aboutText {
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 40px;
-text-align: center;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
 
-color: #101E16;
+  color: #101e16;
 
   /* text-align: justify; */
 }
-
-
 
 /* feature css start */
 #feature {
@@ -169,7 +248,6 @@ color: #101E16;
 #feature .features-img-div img {
   height: 100%;
 }
-
 
 #feature .feature-card .feature-card-header .feature-card-header-title {
   font-style: normal;
@@ -202,7 +280,7 @@ color: #101E16;
 }
 
 #feature .feature-card .feature-card-body .feature-card-body-checkmark li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 28px;
@@ -272,9 +350,63 @@ color: #101E16;
   margin-bottom: 0px;
 }
 
+#gallery .mobile-gallery {
+  display: none;
+}
+
+#gallery .mobile-gallery .col-sm-6 {
+  padding: 7px !important;
+}
+
+#gallery .mobile-gallery .gallery-img {
+  border-radius: 20px;
+  position: relative;
+  background-size: cover !important;
+  height: 300px;
+  background-repeat: no-repeat !important;
+}
+
 #gallery #gallery-slider .gallery-img {
   border-radius: 20px;
+  position: relative;
   background-size: cover;
+}
+
+#gallery .mobile-gallery .gallery-img .gallery-overfly {
+  position: absolute;
+  bottom: 20px;
+
+  display: block !important;
+}
+
+#gallery #gallery-slider .gallery-img .gallery-overfly {
+  position: absolute;
+  left: -150px;
+  transition: all 600ms;
+  bottom: 30px;
+  visibility: hidden;
+
+}
+
+#gallery #gallery-slider .gallery-img:hover .gallery-overfly,
+#gallery #gallery-slider .gallery-img:focus .gallery-overfly {
+  left: 20px;
+  transition: all 600ms;
+  visibility: visible;
+
+}
+
+#gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title,
+#gallery .mobile-gallery .gallery-img .gallery-overfly .gallery-overfly-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+#gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title:hover {
+  opacity: 0.7;
 }
 
 #gallery #gallery-slider .gallery-img-1 {
@@ -298,14 +430,12 @@ color: #101E16;
 }
 
 #contact .contactTitle {
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 700;
-font-size: 52px;
-line-height: 86px;
-color: #101E16;
-  
-  
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 86px;
+  color: #101e16;
 }
 
 #contact .card .contact-img {
@@ -326,29 +456,29 @@ color: #101E16;
 
 #contact .card .form-control {
   padding: 18px;
-
 }
 
-
-
-#contact .form-label{
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-color: #808D85;
+#contact .form-label {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #808d85;
 }
 
-#contact .form-control:focus{
-  font-family: 'Axiforma';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 28px;
-color: #101E16;
+#contact .card .form-control::placeholder {
+  color: #bcc5bf;
+  opacity: 1;
+  /* Firefox */
+}
 
-  
+#contact .form-control:focus {
+  font-weight: 600;
+}
+
+#contact .form-control:focus::placeholder {
+  color: #101e16;
 }
 
 #contact .card .btn-submit {
@@ -412,36 +542,31 @@ body[dir="rtl"] #footer .social-side {
   text-align: right;
 }
 
-
 body[dir="rtl"] #footer .download-side {
   text-align: left;
 }
+
 /* 
 body[dir="rtl"] #footer .social-side {
   text-align: right ;
 } */
 
 #footer .social-side .social li a {
-
-  background: #8C9D94;
+  background: #8c9d94;
   border-radius: 50%;
   padding: 8px 10px 8px 10px;
   display: flex;
   align-items: center;
-  color: #101E16;
+  color: #101e16;
   text-decoration: none;
-
 }
 
-body[dir="rtl"] #footer .social-side .social  {
-
-  padding:0px !important;
-
+body[dir="rtl"] #footer .social-side .social {
+  padding: 0px !important;
 }
+
 #footer .social-side .social li a.pinterest {
-
   padding: 8px 9px 8px 9px;
-
 }
 
 #footer .social-side .social li a:hover,
@@ -464,3 +589,16 @@ body[dir="rtl"] #footer .social-side .social  {
 #footer .download-side .appstore {
   margin-bottom: 32px;
 }
+
+/* .form-control ::placeholder {
+  color: red !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { 
+ color: red;
+}
+
+::-ms-input-placeholder {
+ color: red;
+} */
