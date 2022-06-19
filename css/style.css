@@ -202,32 +202,28 @@ color: #101E16;
 }
 
 #feature .feature-card .feature-card-body .feature-card-body-checkmark li::before {
-  content: " ";
-  display: block;
-
-  border-radius: 0.8em;
-  height: 0;
-  width: 0;
+  content: '';
   position: absolute;
-  left: 0.5em;
-  top: 40%;
-  margin-top: -0.5em;
-  box-sizing: initial;
+  left: 0;
+  width: 28px;
+  height: 30px;
+  top: 1px;
+  background: url("../assets/features/tick-circle.png") no-repeat;
 }
 
 #feature .feature-card .feature-card-body .activity li::before {
-  border: solid 0.8em #febe3a;
+  background: url("../assets/features/tick-circle.png") no-repeat;
 }
 
 #feature .feature-card .feature-card-body .friends li::before {
-  border: solid 0.8em #52c9fa;
+  background: url("../assets/features/friends-tick.png") no-repeat;
 }
 
 #feature .feature-card .feature-card-body .chatting li::before {
-  border: solid 0.8em #f44e8a;
+  background: url("../assets/features/chatting-tick.png") no-repeat;
 }
 
-#feature .feature-card .feature-card-body .feature-card-body-checkmark li::after {
+/* #feature .feature-card .feature-card-body .feature-card-body-checkmark li::after {
   content: " ";
   display: block;
   width: 0.3em;
@@ -243,7 +239,7 @@ color: #101E16;
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: initial;
-}
+} */
 
 /* gallery css start */
 #gallery {
