@@ -129,6 +129,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 29px;
+    margin-top: 15px;
 
     color: #101E16;
 
@@ -353,6 +354,13 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ 
+    /* Styles */
+    #gallery .mobile-gallery .gallery-img {
+      height: 122px;
+    }
+ 
+  
   #gallery-slider .slick-arrow {
     padding: 10px 14px;
   }
