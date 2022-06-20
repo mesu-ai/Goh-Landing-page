@@ -297,7 +297,7 @@
 
 @media only screen and (max-width: 576px) {
   #gallery .mobile-gallery .gallery-img {
-    height: 240px;
+    height: 200px;
   }
 
   #gallery .mobile-gallery .gallery-img .gallery-overfly {
@@ -321,7 +321,7 @@
   }
 
   #footer .download-side img {
-    width: 120px;
+    width: 140px;
     height: 50px;
   }
 
@@ -351,6 +351,7 @@
 
   #gallery .mobile-gallery .gallery-img {
     height: 122px;
+
   }
 
   /* Styles */
