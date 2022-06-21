@@ -180,9 +180,6 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
 
 #welcome .welcomeTitle {
   font-family: "Axiforma";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 72px;
   color: #41b06b;
 }
 
@@ -190,7 +187,6 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   font-family: "Axiforma";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
   color: #101e16;
 }
 
@@ -208,7 +204,6 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   margin-top: 60px;
   background-image: url("../assets/about/aboutbg.png");
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-position: center;
   background-size: cover;
 }
