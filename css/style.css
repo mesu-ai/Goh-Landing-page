@@ -89,9 +89,9 @@ body[dir="rtl"]  .animated-icon1 span {
   top: 0;
 }
 
-.animated-icon1 span:nth-child(2) {
+/* .animated-icon1 span:nth-child(2) {
   top: 10px;
-}
+} */
 
 .animated-icon1 span:nth-child(3) {
   top: 20px;
