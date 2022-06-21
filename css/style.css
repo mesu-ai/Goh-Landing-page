@@ -91,6 +91,7 @@ body[dir="rtl"]  .animated-icon1 span {
 
 /* .animated-icon1 span:nth-child(2) {
   top: 10px;
+  visibility: hidden;
 } */
 
 .animated-icon1 span:nth-child(3) {
@@ -209,6 +210,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   background-repeat: no-repeat;
   /* background-size: contain; */
   background-position: center;
+  background-size: cover;
 }
 
 #about .aboutTitle {
