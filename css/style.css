@@ -329,23 +329,7 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   background: url("../assets/features/chatting-tick.png") no-repeat;
 }
 
-/* #feature .feature-card .feature-card-body .feature-card-body-checkmark li::after {
-  content: " ";
-  display: block;
-  width: 0.3em;
-  height: 0.6em;
-  border: solid #fff;
-  border-width: 0 0.2em 0.2em 0;
-  position: absolute;
-  left: 1em;
-  top: 40%;
-  margin-top: -0.2em;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-sizing: initial;
-} */
+
 
 /* gallery css start */
 #gallery {
@@ -431,8 +415,7 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #00000099;
-  padding: 10px 20px;
+  
 }
 
 #gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title:hover {
@@ -457,6 +440,31 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
 #gallery #gallery-slider .gallery-img-4 {
   height: 334px !important;
 }
+
+/* gallery image overlay */
+
+.text-overlap {
+  position: relative !important;
+}
+
+.card-overlay {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(14, 14, 14, 0.785);
+    border-radius: 18px;
+  }
+
+.text-overlap:hover .card-overlay {
+    opacity: 1;
+  }
+
 
 /* contact css :start */
 #contact {
