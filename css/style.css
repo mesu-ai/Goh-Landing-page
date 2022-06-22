@@ -457,7 +457,7 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: rgba(14, 14, 14, 0.785);
+    background: rgba(14, 14, 14, 0.542);
     border-radius: 18px;
   }
 
