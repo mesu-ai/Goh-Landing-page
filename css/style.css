@@ -202,10 +202,11 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
 
 #about {
   margin-top: 60px;
+
   background-image: url("../assets/about/aboutbg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 #about .aboutTitle {
@@ -430,6 +431,8 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
+  background-color: #00000099;
+  padding: 10px 20px;
 }
 
 #gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title:hover {
@@ -439,6 +442,7 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
 #gallery #gallery-slider .gallery-img-1 {
   height: 700px;
 }
+
 
 #gallery #gallery-slider .gallery-img-4 {
   margin-top: 30px;

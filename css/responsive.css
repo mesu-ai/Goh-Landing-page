@@ -246,7 +246,7 @@
   }
 
   #about {
-    margin-top: 60px;
+    padding-top: 30px;
     background-image: url("../assets/about/aboutbg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,6 +255,7 @@
 
   #about .aboutTitle {
     font-size: 26px;
+    line-height: 30px;
   }
 
   #about .aboutText {
