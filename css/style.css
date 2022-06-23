@@ -202,7 +202,6 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
 
 #about {
   margin-top: 60px;
-
   background-image: url("../assets/about/aboutbg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -445,6 +444,10 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
 
 .text-overlap {
   position: relative !important;
+}
+#gallery .mobile-gallery .gallery-img .card-overlay{
+  opacity: 1 !important;
+  background: initial !important;
 }
 
 .card-overlay {
