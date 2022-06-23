@@ -12,17 +12,43 @@
 .mobile-show{
   display: none !important;
 }
-@media only screen and (max-width: 1600px)  {
+.dasktop-show .welcomeImg{
+  max-width: 70%;
+}
+@media only screen and (max-width: 1500px)  {
+  #gallery-slider .slick-prev {
+    left: -3%;
+  }
+  #gallery-slider .slick-next {
+    right: -3%;
+  }
+
+  .dasktop-show .welcomeImg{
+    max-width: 60%;
+  }
+  #welcome .mobile-tansfrom .card-center-right {
+   
+    right: -70px;
+  
+   
+    width: 55%;
+   
+  }
+  #welcome .mobile-tansfrom .card-center-right:hover {
+    
+    width: 88%;
+    transition: all 600ms;
+  }
+}
+@media only screen and (max-width: 1200px)  {
   .dasktop-show{
     display: none !important;
   }
+ 
  .mobile-show{
     display: block !important;
   }
-}
 
-
-@media only screen and (max-width: 1200px)  {
   #gallery-slider .slick-prev {
     left: 0;
   }
