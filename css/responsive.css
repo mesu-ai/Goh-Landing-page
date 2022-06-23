@@ -256,16 +256,14 @@
   }
 
   #about {
-    /* padding-top: 30px;
-    background-image: url("../assets/about/aboutbg.png");
-    background-repeat: no-repeat; */
-    /* background-size: cover;  */
-    /* background-position: center; */
+   padding-top: 30px;
+    
   }
 
   #about .aboutTitle {
     font-size: 26px;
     line-height: 30px;
+    padding-bottom: 15px;
   }
 
   #about .aboutText {
