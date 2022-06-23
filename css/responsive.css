@@ -1,3 +1,49 @@
+
+
+@media only screen and (min-width: 1200px) and  (max-width:1600px){
+  #welcome .mobile-tansfrom .card-right:hover {
+    right: -68px;
+    width: 291px;
+  }
+}
+@media only screen and (min-width: 1501px) and  (max-width:1600px){
+  #welcome .mobile-tansfrom .card-center-right {
+    right: -95px;
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1401px) and  (max-width:1500px){
+  #welcome .mobile-tansfrom .card-center-right {
+    right: -80px;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1301px) and  (max-width:1400px){
+  #welcome .mobile-tansfrom .card-center-right {
+    right: -77px;
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1231px) and  (max-width:1300px){
+  #welcome .mobile-tansfrom .card-center-right {
+    right: -95px;
+    width: 53%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and  (max-width:1230px){
+  #welcome .mobile-tansfrom .card-center-right {
+    right: -75px;
+    width: 53%;
+  }
+
+}
+
+
+
 @media only screen and (min-width: 1200px) and  (max-width:1400px) {
   #welcome .app-down-image>img {
     width: 140px;
@@ -26,14 +72,7 @@
   .dasktop-show .welcomeImg{
     max-width: 60%;
   }
-  #welcome .mobile-tansfrom .card-center-right {
-   
-    right: -70px;
   
-   
-    width: 55%;
-   
-  }
   #welcome .mobile-tansfrom .card-center-right:hover {
     
     width: 88%;

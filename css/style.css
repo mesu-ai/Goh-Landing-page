@@ -218,6 +218,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   transition: all 600ms;
   width: 350px;
 }
+
 #welcome .mobile-tansfrom .card-center-right {
   background-image: url(../assets/welcome/Group39325.png);
   position: absolute;
