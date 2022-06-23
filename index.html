@@ -1,879 +1,1127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>GOH | Welcome</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-  <title>GOH | Welcome</title>
-</head>
+  <body>
+    <header id="header">
+      <!--navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/logo/Goh logo.svg"
+              alt=""
+              height="35px"
+              class=""
+            />
+          </a>
+          <!-- Collapse button -->
+          <button
+            class="navbar-toggler first-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="animated-icon1">
+              <span></span><span></span><span></span>
+            </div>
+          </button>
 
-<body>
-  <header id="header">
-    <!--navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logo/Goh logo.svg" alt="" height="35px" class="" />
-        </a>
-        <!-- Collapse button -->
-        <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <div class="animated-icon1"><span></span><span></span><span></span>
-        </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-2">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-lg-4">
+                <a class="nav-link" href="#feature">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item mx-lg-4">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
 
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pe-2">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item mx-lg-4">
-              <a class="nav-link" href="#feature">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item mx-lg-4">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          <div class="tanslateBtn-group center-container">
-            <ButtonGroup size="sm" class="border border-2 p-1 buttonGroup">
-              <button id="eng" class="active tanslateBtn border-0 p-2 btnText">
-                EN
-              </button>
-              <button id="ar" class="tanslateBtn border-0 p-2 btnText text-center">
-                AR
-              </button>
-            </ButtonGroup>
+            <div class="tanslateBtn-group center-container">
+              <div size="sm" class="border border-2 p-1 buttonGroup">
+                <button
+                  id="eng"
+                  class="active tanslateBtn border-0 p-2 btnText"
+                >
+                  EN
+                </button>
+                <button
+                  id="ar"
+                  class="tanslateBtn border-0 p-2 btnText text-center"
+                >
+                  AR
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    <!-- welcome section start -->
-    <section id="welcome" class="mt-5 ">
-      <div class="row container mx-auto align-items-center">
-        <div class="col-12 col-lg-5 order-md-1 mt-4 mt-md-0">
-          <p class="welcomeTitle center-container mb-0 fw-lighter display-2">Welcome!</p>
-          <h3 class="welcomeGoh center-container display-2">Goh</h3>
-          <p class="welcomeText mt-3 ">
+    <main>
+      <!-- welcome section start -->
+      <section id="welcome" class="my-5 pb-lg-5">
+        <div class="row container mx-auto align-items-center">
+          <div class="col-12 col-lg-6 order-md-1 mt-4 mt-md-0">
+            <p class="welcomeTitle center-container mb-0 fw-lighter display-2">
+              Welcome!
+            </p>
+            <h3 class="welcomeGoh center-container display-2">Goh</h3>
+            <p class="welcomeText mt-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard.
+            </p>
+
+            <div class="app-down-image">
+              <img src="./assets/welcome/app.png" alt="" class="mt-sm-0 my-2" />
+              <img
+                src="./assets/welcome/google.png"
+                alt=""
+                class="mx-3 mx-md-3 mx-lg-0 mx-xl-4 mt-sm-0 my-2 app-down-google"
+              />
+            </div>
+          </div>
+
+          <div
+            class="dasktop-show text-center  col-12 col-lg-6 mt-3 mt-lg-0 order-first order-md-2"
+          >
+            <div class="mobile-tansfrom">
+              <div class="card-right"></div>
+              <div class="card-center-right"></div>
+              <div class="card-bottom-left"></div>
+
+              <img
+                class="welcomeImg w-80 h-100"
+                src="/assets/welcome/welcomebg.png"
+                alt=""
+                height=""
+                width=""
+              />
+            </div>
+          </div>
+          <div
+            class="mobile-show col-12 col-lg-6 mt-3 mt-lg-0 order-first order-md-2"
+          >
+            <img
+              class="welcomeImg w-100 h-100"
+              src="/assets/welcome/coverImg.png"
+              alt=""
+              height=""
+              width=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- start about section -->
+      <section id="about">
+        <div class="container py-lg-5 my-lg-5 ">
+          <h3 class="aboutTitle">About</h3>
+          <p class="aboutText mt-4 px-3 px-md-0">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard.
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
           </p>
 
-          <div class="app-down-image">
-            <img src="./assets/welcome/app.png" alt="" class=" mt-sm-0 my-2" />
-            <img src="./assets/welcome/google.png" alt=""
-              class="mx-3 mx-md-3 mx-lg-0 mx-xl-4 mt-sm-0 my-2 app-down-google" />
+          <p class="aboutText px-3 px-md-0">
+            When an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially
+            unchanged.
+          </p>
+        </div>
+      </section>
+
+      <!-- feature section start -->
+
+      <section id="feature">
+        <div class="container">
+          <div class="feature-header">
+            <h2 class="feature-header-title">Features</h2>
           </div>
-        </div>
-        <div class="col-12 col-lg-7 mt-3 mt-lg-0 order-first order-md-2">
-          <img class="welcomeImg w-100 h-100" src="/assets/welcome/coverImg.png" alt="" height="" width="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- start about section -->
-    <section id="about">
-      <div class="container py-lg-5 my-lg-5">
-        <h3 class="aboutTitle">About</h3>
-        <p class="aboutText mt-4 px-3 px-md-0">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-
-        <p class="aboutText px-3 px-md-0">
-          When an unknown printer took a galley of type and scrambled it to
-          make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting, remaining essentially
-          unchanged.
-        </p>
-      </div>
-    </section>
-
-    <!-- feature section start -->
-
-    <section id="feature">
-      <div class="container">
-        <div class="feature-header">
-          <h2 class="feature-header-title">Features</h2>
-        </div>
-        <div class="col-lg-11 col-md-12 col-sm-12 mx-auto px-2 px-md-auto">
-          <div class="row padding-bottom-60">
-            <div class="col-md-5">
-              <div class="feature-card-header d-block d-md-none">
-                <img width="50" height="50" src="./assets/features/plus.png" />
-                <h2 class="feature-card-header-title">Create Activity</h2>
-                <p class="feature-card-header-disc pb-0 pb-md-3">
-                  When an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
-                </p>
-              </div>
-              <div class="features-img-div">
-                <img class="w-100" src="./assets/features/Rectangle 2813.png" />
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="feature-card py-md-5 ps-md-5 p-2">
-                <div class="feature-card-header d-none d-md-block">
-                  <img width="50" height="50" src="./assets/features/plus.png" />
+          <div class="col-lg-11 col-md-12 col-sm-12 mx-auto px-2 px-md-auto">
+            <div class="row padding-bottom-60">
+              <div class="col-md-5">
+                <div class="feature-card-header d-block d-md-none">
+                  <img
+                    width="50"
+                    height="50"
+                    src="./assets/features/plus.png"
+                  />
                   <h2 class="feature-card-header-title">Create Activity</h2>
-                  <p class="feature-card-header-disc">
-                    When an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book.
-                  </p>
-                </div>
-                <div class="feature-card-body">
-                  <ul class="feature-card-body-checkmark activity p-0">
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row padding-bottom-60">
-            <div class="col-md-7">
-              <div class="feature-card py-md-5 pe-md-5 p-2">
-                <div class="feature-card-header">
-                  <img width="50" height="50" src="./assets/features/friends.png" />
-                  <h2 class="feature-card-header-title">Friends</h2>
                   <p class="feature-card-header-disc pb-0 pb-md-3">
-                    When an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book.
+                    When an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book.
                   </p>
                 </div>
-                <div class="feature-card-body d-none d-md-block">
-                  <ul class="feature-card-body-checkmark friends p-0">
-                    <li class="">
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                  </ul>
+                <div class="features-img-div">
+                  <img
+                    class="w-100"
+                    src="./assets/features/Rectangle 2813.png"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="feature-card py-md-5 ps-md-5 p-2">
+                  <div class="feature-card-header d-none d-md-block">
+                    <img
+                      width="50"
+                      height="50"
+                      src="./assets/features/plus.png"
+                    />
+                    <h2 class="feature-card-header-title">Create Activity</h2>
+                    <p class="feature-card-header-disc">
+                      When an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                  <div class="feature-card-body">
+                    <ul class="feature-card-body-checkmark activity p-0">
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="features-img-div">
-                <img class="w-100" src="./assets/features/Rectangle 2825.png" />
-              </div>
-              <div class="feature-card py-md-5 pe-md-5 p-2 d-block d-md-none">
-                <div class="feature-card-body ">
-                  <ul class="feature-card-body-checkmark friends p-0">
-                    <li class="">
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                  </ul>
+            <div class="row padding-bottom-60">
+              <div class="col-md-7">
+                <div class="feature-card py-md-5 pe-md-5 p-2">
+                  <div class="feature-card-header">
+                    <img
+                      width="50"
+                      height="50"
+                      src="./assets/features/friends.png"
+                    />
+                    <h2 class="feature-card-header-title">Friends</h2>
+                    <p class="feature-card-header-disc pb-0 pb-md-3">
+                      When an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                  <div class="feature-card-body d-none d-md-block">
+                    <ul class="feature-card-body-checkmark friends p-0">
+                      <li class="">
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
-            </div>
-          </div>
-          <div class="row padding-bottom-60 pb-0">
-            <div class="col-md-5">
-              <div class="feature-card-header d-block d-md-none">
-                <img width="50" height="50" src="./assets/features/chatting.png" />
-                <h2 class="feature-card-header-title">Chatting</h2>
-                <p class="feature-card-header-disc pb-0">
-                  When an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
-                </p>
+              <div class="col-md-5">
+                <div class="features-img-div">
+                  <img
+                    class="w-100"
+                    src="./assets/features/Rectangle 2825.png"
+                  />
+                </div>
+                <div class="feature-card py-md-5 pe-md-5 p-2 d-block d-md-none">
+                  <div class="feature-card-body">
+                    <ul class="feature-card-body-checkmark friends p-0">
+                      <li class="">
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="features-img-div">
-                <img class="w-100" src="./assets/features/Rectangle 2826.png" />
-              </div>
             </div>
-            <div class="col-md-7">
-              <div class="feature-card py-md-5 ps-md-5 p-2">
-                <div class="feature-card-header d-none d-md-block">
-                  <img width="50" height="50" src="./assets/features/chatting.png" />
+            <div class="row padding-bottom-60 pb-0">
+              <div class="col-md-5">
+                <div class="feature-card-header d-block d-md-none">
+                  <img
+                    width="50"
+                    height="50"
+                    src="./assets/features/chatting.png"
+                  />
                   <h2 class="feature-card-header-title">Chatting</h2>
-                  <p class="feature-card-header-disc">
-                    When an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book.
+                  <p class="feature-card-header-disc pb-0">
+                    When an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book.
                   </p>
                 </div>
-                <div class="feature-card-body">
-                  <ul class="feature-card-body-checkmark chatting p-0">
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                    <li>
-                      It has survived not only five centuries, but also the
-                      leap into
-                    </li>
-                    <li>
-                      Electronic typesetting, remaining essentially unchanged.
-                    </li>
-                  </ul>
+                <div class="features-img-div">
+                  <img
+                    class="w-100"
+                    src="./assets/features/Rectangle 2826.png"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="feature-card py-md-5 ps-md-5 p-2">
+                  <div class="feature-card-header d-none d-md-block">
+                    <img
+                      width="50"
+                      height="50"
+                      src="./assets/features/chatting.png"
+                    />
+                    <h2 class="feature-card-header-title">Chatting</h2>
+                    <p class="feature-card-header-disc">
+                      When an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                  <div class="feature-card-body">
+                    <ul class="feature-card-body-checkmark chatting p-0">
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                      <li>
+                        It has survived not only five centuries, but also the
+                        leap into
+                      </li>
+                      <li>
+                        Electronic typesetting, remaining essentially unchanged.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Gallery Section Start -->
-    <section id="gallery">
-      <div class="container">
-        <div class="gallery-head text-center">
-          <h2 class="gallery-head-title">Gallery</h2>
-        </div>
-        <div id="gallery-slider" dir="rtl">
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="text-overlap gallery-img-2 gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="text-overlap gallery-img-3 gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="text-overlap gallery-img-4 gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                  <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                      
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 gallery-img text-overlap" style="
-                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+      <!-- Gallery Section Start -->
+      <section id="gallery">
+        <div class="container">
+          <div class="gallery-head text-center">
+            <h2 class="gallery-head-title">Gallery</h2>
           </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 gallery-img text-overlap" style="
+          <div id="gallery-slider" dir="rtl">
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="text-overlap gallery-img-2 gallery-img"
+                        style="
                           background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
                         </div>
                       </div>
-                      
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="text-overlap gallery-img-3 gallery-img" style="
+                    <div class="col-md-6">
+                      <div
+                        class="text-overlap gallery-img-3 gallery-img"
+                        style="
                           background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
                         </div>
                       </div>
-                      
                     </div>
                   </div>
-                </div>
-                <div class="gallery-img-4 gallery-img text-overlap" style="
+                  <div
+                    class="text-overlap gallery-img-4 gallery-img"
+                    style="
                       background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
                     </div>
                   </div>
-                  
                 </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 gallery-img text-overlap" style="
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 gallery-img text-overlap"
+                    style="
                       background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 gallery-img text-overlap" style="
-                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
                       </div>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="gallery-img-3 gallery-img text-overlap" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-img-4 gallery-img text-overlap" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 gallery-img text-overlap" style="
-                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 gallery-img text-overlap" style="
-                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="gallery-img-3 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-img-4 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 text-overlap gallery-img" style="
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 gallery-img text-overlap"
+                        style="
                           background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="text-overlap gallery-img-3 gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="gallery-img-3 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
+                  <div
+                    class="gallery-img-4 gallery-img text-overlap"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="gallery-img-4 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 gallery-img text-overlap"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 text-overlap gallery-img" style="
+            </div>
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 gallery-img text-overlap"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-3 gallery-img text-overlap"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gallery-img-4 gallery-img text-overlap"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 gallery-img text-overlap"
+                    style="
                       background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 gallery-img text-overlap"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-3 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gallery-img-4 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-3 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gallery-img-4 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-3 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gallery-img-4 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 1 start -->
+            <div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-2 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="gallery-img-3 text-overlap gallery-img"
+                        style="
+                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
+                        "
+                      >
+                        <div class="card-overlay">
+                          <div class="gallery-overfly">
+                            <h3 class="gallery-overfly-title text-white">
+                              Title here
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gallery-img-4 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="gallery-img-1 text-overlap gallery-img"
+                    style="
+                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
+                    "
+                  >
+                    <div class="card-overlay">
+                      <div class="gallery-overfly">
+                        <h3 class="gallery-overfly-title text-white">
+                          Title here
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
 
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="gallery-img-3 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-img-4 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                    <div class="gallery-overfly">
-                      <h3 class="gallery-overfly-title text-white">Title here</h3>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- slide 1 start -->
-          <div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="gallery-img-2 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="gallery-img-3 text-overlap gallery-img" style="
-                          background-image: url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                        ">
-                      <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-img-4 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_aWXVxy8BSzc.png');
-                    ">
-                  <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="gallery-img-1 text-overlap gallery-img" style="
-                      background-image: url('./assets/gallery/unsplash_oGv9xIl7DkY.png');
-                    ">
-                  <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="mobile-gallery row">
-          <div class="col-sm-6 col-6">
-            <div class="gallery-img-1 text-overlap gallery-img" style="
+          <div class="mobile-gallery row">
+            <div class="col-sm-6 col-6">
+              <div
+                class="gallery-img-1 text-overlap gallery-img"
+                style="
                   background: linear-gradient(
                       to bottom,
                       rgba(0, 0, 0, 0),
                       rgba(0, 0, 0, 0.6)
                     ),
                     url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                ">
-              <div class="card-overlay">
-                <div class="gallery-overfly">
-                  <h3 class="gallery-overfly-title text-white">Title here</h3>
+                "
+              >
+                <div class="card-overlay">
+                  <div class="gallery-overfly">
+                    <h3 class="gallery-overfly-title text-white">Title here</h3>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-6">
-            <div class="gallery-img-1 text-overlap gallery-img" style="
+            <div class="col-sm-6 col-6">
+              <div
+                class="gallery-img-1 text-overlap gallery-img"
+                style="
                   background: linear-gradient(
                       to bottom,
                       rgba(0, 0, 0, 0),
                       rgba(0, 0, 0, 0.6)
                     ),
                     url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                ">
-              <div class="card-overlay">
-                <div class="gallery-overfly">
-                  <h3 class="gallery-overfly-title text-white">Title here</h3>
+                "
+              >
+                <div class="card-overlay">
+                  <div class="gallery-overfly">
+                    <h3 class="gallery-overfly-title text-white">Title here</h3>
+                  </div>
                 </div>
               </div>
-
             </div>
-          </div>
-          <div class="col-sm-6 col-6">
-            <div class="gallery-img-1 text-overlap gallery-img" style="
+            <div class="col-sm-6 col-6">
+              <div
+                class="gallery-img-1 text-overlap gallery-img"
+                style="
                   background: linear-gradient(
                       to bottom,
                       rgba(0, 0, 0, 0),
                       rgba(0, 0, 0, 0.6)
                     ),
                     url('./assets/gallery/unsplash_Q_KdjKxntH8.png');
-                ">
-              <div class="card-overlay">
-                        <div class="gallery-overfly">
-                          <h3 class="gallery-overfly-title text-white">Title here</h3>
-                        </div>
-                      </div>
+                "
+              >
+                <div class="card-overlay">
+                  <div class="gallery-overfly">
+                    <h3 class="gallery-overfly-title text-white">Title here</h3>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-6">
-            <div class="gallery-img-1 text-overlap gallery-img" style="
+            <div class="col-sm-6 col-6">
+              <div
+                class="gallery-img-1 text-overlap gallery-img"
+                style="
                   background: linear-gradient(
                       to bottom,
                       rgba(0, 0, 0, 0),
                       rgba(0, 0, 0, 0.6)
                     ),
                     url('./assets/gallery/unsplash_2rjjnfdlwGY.png');
-                ">
-              <div class="card-overlay">
-                <div class="gallery-overfly">
-                  <h3 class="gallery-overfly-title text-white">Title here</h3>
+                "
+              >
+                <div class="card-overlay">
+                  <div class="gallery-overfly">
+                    <h3 class="gallery-overfly-title text-white">Title here</h3>
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
-          <div class="col-12 text-center">
-            <button class="btn btn-see-all">See All</button>
-
+            <div class="col-12 text-center">
+              <button class="btn btn-see-all">See All</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <!-- Contact Section Start -->
-    <section id="contact">
+      <!-- Contact Section Start -->
+      <section id="contact">
+        <div class="container">
+          <div class="card">
+            <div class="col-md-10 mx-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="contact-img" src="./assets/contact-frame.png" />
+                </div>
+                <div class="col-md-6">
+                  <h2 class="contactTitle mt-md-0 mt-3 mb-md-4 mb-1">
+                    Contact
+                  </h2>
+                  <form class="contact-form">
+                    <div class="mb-3">
+                      <label for="full_name" class="form-label"
+                        >Full Name</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="full_name"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Write your message"
+                        id="message"
+                        rows="6"
+                      ></textarea>
+                    </div>
+                    <div class="submit-footer mb-3">
+                      <button
+                        class="btn btn-submit py-0 py-md-auto"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Contact Section End -->
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer_bg">
       <div class="container">
-        <div class="card">
-          <div class="col-md-10 mx-auto">
-            <div class="row">
-              <div class="col-md-6">
-                <img class="contact-img" src="./assets/contact-frame.png" />
+        <div class="col-sm-12 col-md-11 col-lg-10 col-xl-10 mx-auto">
+          <div class="row">
+            <div
+              class="col-md-6 col-12 col-sm-6 text-center ps-4 ps-md-0 mt-4 mt-sm-auto"
+            >
+              <div class="social-side text-algin-left">
+                <h5 class="social-side-sub-title">For any questions</h5>
+                <h1 class="social-side-title">info@hellogoh.com</h1>
+
+                <ul
+                  class="social text-muted pb-0 bold-text justify-content-center justify-content-sm-start ps-0"
+                >
+                  <li class="mx-2">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#" class="pinterest"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                </ul>
+                <small class="rights">© 2022 Goh. All rights reserved.</small>
               </div>
-              <div class="col-md-6">
-                <h2 class="contactTitle mt-md-0 mt-3 mb-md-4 mb-1">
-                  Contact
-                </h2>
-                <form class="contact-form">
-                  <div class="mb-3">
-                    <label for="full_name" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="full_name" placeholder="Enter First Name" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" placeholder="Write your message" id="message" rows="6"></textarea>
-                  </div>
-                  <div class="submit-footer mb-3">
-                    <button class="btn btn-submit py-0 py-md-auto" type="submit">Send</button>
-                  </div>
-                </form>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 custom-order">
+              <div class="download-side">
+                <a class="d-block download-side-link appstore mx-2 mx-sm-0"
+                  ><img width="200px" height="64px" src="./assets/appstore.png"
+                /></a>
+                <a class="d-block download-side-link mx-2 mx-sm-0"
+                  ><img src="./assets/googleplaystore.png"
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <!-- Contact Section End -->
-  <!-- Footer Section Start -->
-  <footer id="footer" class="footer_bg">
-    <div class="container">
-      <div class="col-sm-12 col-md-11 col-lg-10 col-xl-10 mx-auto">
-        <div class="row">
-          <div class="col-md-6 col-12 col-sm-6 text-center ps-4 ps-md-0 mt-4 mt-sm-auto">
-            <div class="social-side text-algin-left">
-              <h5 class="social-side-sub-title">For any questions</h5>
-              <h1 class="social-side-title">info@hellogoh.com</h1>
-
-              <ul class="social text-muted pb-0 bold-text justify-content-center justify-content-sm-start ps-0">
-                <li class="mx-2">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li class="mx-2">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li class="mx-2">
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                </li>
-                <li class="mx-2">
-                  <a href="#" class="pinterest"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-              </ul>
-              <small class="rights">© 2022 Goh. All rights reserved.</small>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6   custom-order">
-            <div class="download-side">
-              <a class="d-block download-side-link appstore mx-2 mx-sm-0"><img width="200px" height="64px"
-                  src="./assets/appstore.png" /></a>
-              <a class="d-block download-side-link mx-2 mx-sm-0"><img src="./assets/googleplaystore.png" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Section End -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-
-      $('.first-button').on('click', function () {
-
-        $('.animated-icon1').toggleClass('open');
+    </footer>
+    <!-- Footer Section End -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".first-button").on("click", function () {
+          $(".animated-icon1").toggleClass("open");
+        });
       });
 
-    });
+      $(document).ready(function () {
+        var settings = {
+          dots: false,
+          rtl: true,
+          infinite: true,
+          arrows: false,
+          speed: 300,
+          arrows: true,
+          slidesToShow: 1,
 
+          adaptiveHeight: true,
+          prevArrow:
+            "<button type='button' class='btn slick-prev '><i class='fa-solid fa-arrow-left' aria-hidden='true'></i></button>",
+          nextArrow:
+            "<button type='button' class='btn slick-next '><i class='fa-solid fa-arrow-right' aria-hidden='true'></i></button>",
+        };
+        $("#gallery-slider").slick(settings);
 
-    $(document).ready(function () {
-      var settings = {
-        dots: false,
-        rtl: true,
-        infinite: true,
-        arrows: false,
-        speed: 300,
-        arrows: true,
-        slidesToShow: 1,
+        $("#eng").on("click", function () {
+          $("body").attr("dir", "ltl");
+          $(this).addClass("active");
+          $("#ar").removeClass("active");
+          $("#gallery-slider").rtl = true;
+        });
+        $("#ar").on("click", function () {
+          settings["rtl"] = true;
+          $(".slick-slider")[0].slick.refresh();
 
-        adaptiveHeight: true,
-        prevArrow:
-          "<button type='button' class='btn slick-prev '><i class='fa-solid fa-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow:
-          "<button type='button' class='btn slick-next '><i class='fa-solid fa-arrow-right' aria-hidden='true'></i></button>",
-      };
-      $("#gallery-slider").slick(settings);
-
-
-
-      $("#eng").on("click", function () {
-        $("body").attr("dir", "ltl");
-        $(this).addClass("active");
-        $("#ar").removeClass("active");
-        $("#gallery-slider").rtl = true;
+          $("body").attr("dir", "rtl");
+          $(this).addClass("active");
+          $("#eng").removeClass("active");
+        });
       });
-      $("#ar").on("click", function () {
-        settings['rtl'] = true
-        $('.slick-slider')[0].slick.refresh()
-
-        $("body").attr("dir", "rtl");
-        $(this).addClass("active");
-        $("#eng").removeClass("active");
-
-
-      });
-
-
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

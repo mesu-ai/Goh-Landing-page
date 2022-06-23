@@ -51,10 +51,10 @@ body {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -70,20 +70,19 @@ body {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-body[dir="rtl"]  .animated-icon1 span {
+body[dir="rtl"] .animated-icon1 span {
   right: 0;
-  left:inherit !important
+  left: inherit !important;
 }
 
 .animated-icon1 span {
   background: black;
 }
-
 
 .animated-icon1 span:nth-child(1) {
   top: 0;
@@ -130,7 +129,6 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   background-color: white;
   color: white;
   border: none;
-
 }
 
 /* header css start */
@@ -153,7 +151,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   align-items: center;
 }
 
-#header .buttonGroup>.btnText {
+#header .buttonGroup > .btnText {
   font-family: "Axiforma";
   font-style: normal;
   font-weight: 600;
@@ -162,7 +160,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   text-align: center;
 }
 
-#header .buttonGroup>.tanslateBtn {
+#header .buttonGroup > .tanslateBtn {
   border-radius: 12px;
   width: 51px;
   height: 41px;
@@ -171,7 +169,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   justify-content: center;
 }
 
-#header .buttonGroup>.active {
+#header .buttonGroup > .active {
   background: #41b06b;
   color: #ffffff;
 }
@@ -197,10 +195,78 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   font-size: 18px;
   color: #4c4f4d;
 }
+#welcome .mobile-tansfrom {
+  position: relative;
+  margin-top: 150px;
+}
+#welcome .mobile-tansfrom .card-right {
+  background-image: url(../assets/welcome/Group39221.png);
+  position: absolute;
+  right: -50px;
 
+  padding: 10px;
+  background-size: cover;
+  background-position: 100%;
+  width: 330px;
+  height: 150px;
+  border: none;
+  top: -46px;
+  transition: all 600ms;
+}
+#welcome .mobile-tansfrom .card-right:hover {
+  right: -100px;
+  transition: all 600ms;
+  width: 350px;
+}
+#welcome .mobile-tansfrom .card-center-right {
+  background-image: url(../assets/welcome/Group39325.png);
+  position: absolute;
+  right: -170px;
+
+  padding: 10px;
+  background-size: cover;
+  background-position: 100%;
+  width: 50%;
+  height: 88px;
+  border: none;
+  top: 44%;
+  transition: all 600ms;
+}
+#welcome .mobile-tansfrom .card-center-right:hover {
+  
+  width: 88%;
+  transition: all 600ms;
+}
+
+#welcome .mobile-tansfrom .card-bottom-left {
+  background-image: url(../assets/welcome/Group39324.png);
+  position: absolute;
+  left: -125px;
+  padding: 10px;
+  background-size: cover;
+  background-position: 100%;
+  width: 80%;
+  height: 88px;
+  border: none;
+  bottom: -11%;
+  transition: all 600ms;
+}
+#welcome .mobile-tansfrom .card-bottom-left:hover{
+  
+  
+  transition: all 600ms;
+  width: 88%;
+  
+}
+#welcome .mobile-tansfrom .card-right .btn-requset {
+  background: #41b06b;
+  border-radius: 8px;
+  color: #ffffff;
+}
 /* about css start */
 
 #about {
+  
   margin-top: 60px;
   background-image: url("../assets/about/aboutbg.png");
   background-repeat: no-repeat;
@@ -287,20 +353,27 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   position: relative;
 }
 
-body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-checkmark li {
+body[dir="rtl"]
+  #feature
+  .feature-card
+  .feature-card-body
+  .feature-card-body-checkmark
+  li {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
 
   margin-bottom: 18px;
   list-style-type: none;
-  padding: 0.25em 2.5em 0  0;
+  padding: 0.25em 2.5em 0 0;
   position: relative;
-
-  
 }
 
-#feature .feature-card .feature-card-body .feature-card-body-checkmark li::before {
+#feature
+  .feature-card
+  .feature-card-body
+  .feature-card-body-checkmark
+  li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -310,10 +383,13 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   background: url("../assets/features/tick-circle.png") no-repeat;
 }
 
-body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-checkmark li::before {
-  
+body[dir="rtl"]
+  #feature
+  .feature-card
+  .feature-card-body
+  .feature-card-body-checkmark
+  li::before {
   right: 0;
-  
 }
 
 #feature .feature-card .feature-card-body .activity li::before {
@@ -327,8 +403,6 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
 #feature .feature-card .feature-card-body .chatting li::before {
   background: url("../assets/features/chatting-tick.png") no-repeat;
 }
-
-
 
 /* gallery css start */
 #gallery {
@@ -396,7 +470,6 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   transition: all 600ms;
   bottom: 30px;
   visibility: hidden;
-
 }
 
 #gallery #gallery-slider .gallery-img:hover .gallery-overfly,
@@ -404,7 +477,6 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   left: 20px;
   transition: all 600ms;
   visibility: visible;
-
 }
 
 #gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title,
@@ -414,10 +486,13 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
-  
 }
 
-#gallery #gallery-slider .gallery-img .gallery-overfly .gallery-overfly-title:hover {
+#gallery
+  #gallery-slider
+  .gallery-img
+  .gallery-overfly
+  .gallery-overfly-title:hover {
   opacity: 0.7;
 }
 
@@ -425,12 +500,11 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
   height: 700px;
 }
 
-
 #gallery #gallery-slider .gallery-img-4 {
   margin-top: 30px;
 }
 #gallery #gallery-slider .gallery-img-2 .gallery-overfly,
-#gallery #gallery-slider .gallery-img-3 .gallery-overfly{
+#gallery #gallery-slider .gallery-img-3 .gallery-overfly {
   bottom: 5px;
 }
 
@@ -445,29 +519,27 @@ body[dir="rtl"] #feature .feature-card .feature-card-body .feature-card-body-che
 .text-overlap {
   position: relative !important;
 }
-#gallery .mobile-gallery .gallery-img .card-overlay{
+#gallery .mobile-gallery .gallery-img .card-overlay {
   opacity: 1 !important;
   background: initial !important;
 }
-
 .card-overlay {
-    position: absolute !important;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background: rgba(14, 14, 14, 0.542);
-    border-radius: 18px;
-  }
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(14, 14, 14, 0.542);
+  border-radius: 18px;
+}
 
 .text-overlap:hover .card-overlay {
-    opacity: 1;
-  }
-
+  opacity: 1;
+}
 
 /* contact css :start */
 #contact {
@@ -635,4 +707,3 @@ body[dir="rtl"] #footer .social-side .social {
 #footer .download-side .appstore {
   margin-bottom: 32px;
 }
-

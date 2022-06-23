@@ -9,7 +9,17 @@
   }
   
 }
-
+.mobile-show{
+  display: none !important;
+}
+@media only screen and (max-width: 1600px)  {
+  .dasktop-show{
+    display: none !important;
+  }
+ .mobile-show{
+    display: block !important;
+  }
+}
 
 
 @media only screen and (max-width: 1200px)  {
@@ -245,6 +255,13 @@
     width: 150px;
   }
 
+  #about {
+    /* padding-top: 30px;
+    background-image: url("../assets/about/aboutbg.png");
+    background-repeat: no-repeat; */
+    /* background-size: cover;  */
+    /* background-position: center; */
+  }
 
   #about .aboutTitle {
     font-size: 26px;
@@ -397,15 +414,7 @@
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (max-width: 350px) {
-  #about{
-    margin-top: 60px;
-  background-image: url("../assets/about/about_mb_bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  }
-
+@media only screen and (min-width: 321px) {
  
 }
 
