@@ -194,6 +194,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   font-weight: 400;
   font-size: 18px;
   color: #4c4f4d;
+  line-height: 34px;
 }
 #welcome .mobile-tansfrom {
   position: relative;
