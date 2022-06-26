@@ -222,12 +222,12 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
 #welcome .mobile-tansfrom .card-center-right {
   background-image: url(../assets/welcome/Group39325.png);
   position: absolute;
-  right: -170px;
+  right: -120px;
 
   padding: 10px;
   background-size: cover;
   background-position: 100%;
-  width: 50%;
+  width: 54%;
   height: 88px;
   border: none;
   top: 44%;
