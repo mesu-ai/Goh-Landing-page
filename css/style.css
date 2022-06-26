@@ -246,7 +246,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   padding: 10px;
   background-size: cover;
   background-position: 100%;
-  width: 80%;
+  width: 54%;
   height: 88px;
   border: none;
   bottom: -11%;
@@ -269,7 +269,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
 #about {
   
   margin-top: 60px;
-  background-image: url("../assets/about/aboutbg.png");
+  background-image: url("../assets/about/Final-Goh-million.svg") ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -333,7 +333,7 @@ body[dir="rtl"] .animated-icon1.open span:nth-child(2) {
   margin-top: 15px;
 }
 
-#feature .feature-card .feature-card-header .feature-card-header-disc {
+#feature .feature-card .feature-card-header .feature-card-header-disc, #feature .feature-card .feature-card-header-disc {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
