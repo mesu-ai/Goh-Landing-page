@@ -1,4 +1,4 @@
-@media only screen and (min-width:1400px) {
+@media only screen and (min-width:1200px) {
   #welcome .welcomeText{
     width: 466px;
     text-align: justify;
@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   #welcome .app-down-image > img {
-    width: 140px;
+    width: 200px;
   }
 
   #welcome .app-down-google {
