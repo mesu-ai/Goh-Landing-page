@@ -1,3 +1,18 @@
+@media only screen and (min-width:767px) and (max-width:1024px){
+ 
+  #feature .features-img-div{
+    display: flex;
+    align-items: center;
+    
+
+  }
+
+  #feature .features-img-div>img{
+    height: 70%;
+  }
+}
+
+
 @media only screen and (min-width:1200px) {
   #welcome .welcomeText{
     width: 466px;
